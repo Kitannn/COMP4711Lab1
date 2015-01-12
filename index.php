@@ -36,10 +36,15 @@ and open the template in the editor.
             $second->add_grade(50);
             $students['a456'] = $second;
             
+            $me = new Student();
+            $me->surname = "Tan";
+            $me->first_name = "Henry";
+            $me->add_email('school','htan40@my.bcit.ca');
+            $students['h789'] = $me;
+            
             foreach ($students as $student)
                 echo $student->toString();
-            
-            
+ 
         ?>
     </body>
 </html>
